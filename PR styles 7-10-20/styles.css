@@ -2,7 +2,7 @@
 body{background-color: cadetblue;}
 
 *{
-    
+    margin: 0%;
     box-sizing: border-box;
 }
 
@@ -12,10 +12,11 @@ header{
     padding-bottom: 20px;
     height: 50px;
     border-bottom: black;
-    position: relative;;
-    top: 20%;
-    right: 20%;
-    left: 20%;
+    position: relative; 
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: 10px;
     background-color: turquoise;
 }
 
@@ -28,7 +29,9 @@ nav{
     top: 20%;
     right: 20%;
     left: 20%;
+    width: 20%;
     background-color: goldenrod;
+    z-index: 1;
 
 }
 aside{
@@ -40,7 +43,10 @@ aside{
     top: 20%;
     right: 20%;
     left: 20%;
+    width: 40%;
     background-color: lightsalmon;
+    height: calc(100vh - 50px);
+    overflow: auto;
 }
 
 main{
@@ -52,5 +58,7 @@ main{
     top: 20%;
     right: 20%;
     left: 20%;
+    width: 50%;
     background-color: brown;
+    min-height: calc(100vh - 50px);
 }
