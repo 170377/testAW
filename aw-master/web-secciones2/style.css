@@ -90,10 +90,15 @@ aside > a {
 
 }
  
-aside > a:hover{
+aside > a:hover, nav > a:hover{
     border-color: black;
 }
-
+/*Cuando el ratón pase por encima */
+aside > a:active, nav > a:active{
+    border-color: white;
+}
+/*Cuando ya lo haya visitado. Pseudclase :visited */
+ 
 aside > a:visited{
     color: blue;
 }
@@ -138,3 +143,19 @@ main{
 */
     padding: 2vh 2% 1vh 2%;
 }
+header img {
+    height: 40px;
+}
+
+aside>p{
+    
+}
+/*
+#video_oculto {
+    display: none;
+}
+
+main:hover > #video_oculto{
+    display: inline;
+}
+*/
