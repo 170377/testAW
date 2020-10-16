@@ -16,9 +16,37 @@ main{
     min-height: cal(100vh - 150px);
 }
 
-
-
 aside{
-    position: absolute;
     min-height: 50px;
+}
+
+/* Versión para tablet */
+
+@media (min-width: 480px){
+    header, nav{
+        height: 50px;
+        display: inline-block;
+    }
+    
+    header{
+        width: 30%;
+    }
+    nav{
+        width: 70%;
+    }
+    aside{
+       width: 30%;
+       display: inline-block;
+       vertical-align: top;
+       min-height: (100vh - 50px)
+    }
+
+    
+    main{
+        width: 70%;
+        display: inline-block;
+        min-height: (100vh - 150px);
+    }
+    
+    
 }
