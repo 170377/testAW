@@ -1,10 +1,10 @@
-/* Todos los elementos*/
+/* Todos los elementos */
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Versión Móvil */
+/* Versión móvil */
 @media (max-width: 400px){
     header{
         background-color: khaki;
@@ -17,6 +17,7 @@
         height: calc( 100vh - 100px );
     }
 
+
     aside > a{
         display: block;
         width: 100%;
@@ -27,25 +28,26 @@
         display: block;
         margin: auto;
     }
-
     aside > a > p{
         display: none;
     }
 
+
     main{
         width: calc( 100% - 60px );
         display: inline-block;
+        height: calc( 100vh - 100px );
+        /* float: right; */
     }
 }
-/* Versión escritorio */
+
+
+
+
+
+/* Versión de escritorio */
 @media (min-width: 401px){
     header{
-        background-color: lightgray;
+        background-color: lightgrey;
     }
 }
-
-
-/* Header (100%*50px)
-Aside 50px
-Main (100% - 50px)x(100vh - 100px)
-Footer (100% x 50px) */
