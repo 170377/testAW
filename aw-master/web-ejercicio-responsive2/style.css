@@ -12,8 +12,8 @@
         width: 100%;
     }
     aside{
-        padding-top: 15px;
-        width: 60px;
+
+        width: 50px;
         display: block;
         height: calc( 100vh - 100px );
         float: left;
@@ -23,7 +23,7 @@
     aside > a{
         display: block;
         width: 100%;
-        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     aside > a > img{
@@ -37,24 +37,25 @@
 
 
     main{
-        width: calc( 100% - 60px );
+        width: calc( 100% - 50px );
         display: block;
         height: calc( 100vh - 100px );
         float: right;
         padding: 0.75rem;
-        /* float: right; */
+        
     }
     section{
         border: 1px solid black;
-        padding: 15px;
+        padding: 5px;
         border-radius: 5px;
         margin-bottom: 10px;
     }
     section:last-of-type{
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
+
     main > section:nth-of-type(odd){
-        background-color: gray;
+        background-color: lavender;
     }
 
     footer{
