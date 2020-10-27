@@ -1,6 +1,77 @@
-body{
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/*Reglas comunes */
+
+body {
+    background-color: khaki;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+#contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 107px;
+}
+
+
+}
+aside,
+main,
+footer {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 15px;
+}
+header {
+    background-color: lightcoral;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+main {
+    order: 2;
+    background-color: lime;
+}
+aside {
+    background-color: lightpink;
+}
+#aside1 {
+    order: 3;
+}
+#aside2 {
+    order: 4;
+}
+footer {
+    order: 5;
+    background-color: lightgreen;
+}
+
+/* Versión para tablet */
+@media (min-width: 768px) {
+    aside {
+        flex-basis: auto;
+    }
+}
+
+/* Versión de escritorio */
+@media(min-width: 1000px) {
+    #aside1 {
+        order: 2;
+    }
+    
+    main {
+        order: 3;
+        flex-basis: 60%;
+    }
+    
+    #aside2 {
+        order: 4;
+    }
+}
