@@ -1,77 +1,72 @@
+/* Reglas comunes */
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-
-/*Reglas comunes */
-
 body {
-    background-color: khaki;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-color: lightblue;
 }
 
-#contenedor-flex {
+header {
+    background-color: lightseagreen;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+#contenedor-flex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 107px;
 }
 
-
-}
-aside,
-main,
-footer {
+aside, main, footer {
     flex-basis: 100%;
     flex-grow: 1;
     padding: 15px;
 }
-header {
-    background-color: lightcoral;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-}
+
 main {
     order: 2;
-    background-color: lime;
+    background-color: lightsalmon;
 }
-aside {
-    background-color: lightpink;
-}
+
 #aside1 {
     order: 3;
+    background-color: lightgoldenrodyellow;
 }
+
 #aside2 {
     order: 4;
+    background-color: linen;
 }
+
 footer {
     order: 5;
-    background-color: lightgreen;
+    background-color: lightslategrey;
 }
 
 /* Versión para tablet */
-@media (min-width: 768px) {
-    aside {
+@media (min-width: 600px){
+    aside{
         flex-basis: auto;
     }
 }
 
-/* Versión de escritorio */
-@media(min-width: 1000px) {
-    #aside1 {
+/* Version de escritorio */
+@media (min-width: 1000px){
+    #aside1{
         order: 2;
     }
-    
-    main {
+    main{
         order: 3;
         flex-basis: 60%;
     }
-    
-    #aside2 {
+    #aside2{
         order: 4;
     }
+
 }
