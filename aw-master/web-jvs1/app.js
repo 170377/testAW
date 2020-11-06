@@ -62,10 +62,12 @@
 
 // Confirm
 
-let resultado;
-resultado = confirm("¿Quieres un saludo we?");
+// let resultado;
+// resultado = confirm("¿Quieres un saludo we?");
 
-if (resultado == true) {
-    alert("HOLAAAA C:");
-}
-alert("fin del programa");
+// if (resultado == true) {
+//     alert("HOLAAAA C:");
+// } else {
+//     alert("Pues te saludo igual prro >:v");
+// }
+// alert("fin del programa");
