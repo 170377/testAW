@@ -1,0 +1,31 @@
+/* En el elemento raíz declaramos las variables CSS */
+
+:root {
+    --colorPrimario: #ff0000;
+    --textoPrimario: white;
+    --colorSecundario: #ffbb00;
+    --textoSecundario: black;
+    --iconoMundo: "\1F30E";
+    --iconoFlecha: "\27A1";
+}
+
+body {
+    background-color: var(--colorSecundario);
+}
+
+li {
+    background-color: var(--colorPrimario);
+    color: var(--textoPrimario);
+    list-style: none;
+    font-size: x-large;
+}
+
+li::before {
+    content: var(--iconoMundo);
+}
+
+li::after {
+    content: ".";
+    text-decoration: underline;
+    font-size: 60pt;
+}
