@@ -39,7 +39,7 @@ function BorrarTarea() {
         //borro ese elemento de la lista
         lTareas.removeChild(lTareas);
 
-    } else() {
+    } else(numTarea == null) {
         alert("Ese número no existe");
     }
 }
