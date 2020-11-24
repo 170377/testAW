@@ -18,28 +18,7 @@ function anyadirElemento(textoTarea) {
     //le añado un elemento de lista con el texto
     // del parámetro textoTarea
     listaTareas.innerHTML += "<li>" + textoTarea + "</li>";
-}
 
-// Esto es equivalente
-
-function BorrarTarea() {
-    //Usar prompt para pedir al usuario un número de tarea.
-    let numTarea = prompt("Selecciona el número de tarea que deseas eliminar tarea");
-    //Comprobar que el número de tarea es válido
-    //capturo la lista de tareas.
-    let lTareas = document.getElementById("listaTareas")
-    if (numTarea >= 1 0 && numTarea <= lTareas.children - length) {
-        //Borrar de la lista de tareas el elemento número
-        //n-1, donde n es el valor que me ha pasado el usuario
-        numTarea = numTarea - 1; //numTarea--; numTarea-=1;
-
-
-        //capturo el elemento que quiero borrar
-        let eTareaBorrar = lTareas.children[numTarea];
-        //borro ese elemento de la lista
-        lTareas.removeChild(lTareas);
-
-    } else(numTarea == null) {
-        alert("Ese número no existe");
-    }
+    //Esto es equivalente
+    //listaTareas.innerHTML = listaTareas.innerHTML + "<li>" + textoTarea + "</li>";
 }
