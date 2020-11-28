@@ -1,29 +1,14 @@
 /* Aplicaciones generales */
+
 * {
     margin: 0;
     background-color: lightblue;
     box-sizing: border-box;
 }
-/* Formato para móvil */
-@media(max-width: 300px) {
-    header>h1 {
-        height: 50px;
-        text-align: center;
-    }
-    header>a>img {
-        height: 30px;
-    }
-}
-/* Formato para tablet */
-@media(min-width: 301px) {}
 
-/* Formato de escritorio */
-@media(min-width: 800px) {
-    nav {
-        height: auto;
-        display: flex;
-        margin: 2%;
-    }
+/* Formato para móvil */
+
+@media(max-width: 500px) {
     header>h1 {
         height: 45px;
         text-align: center;
@@ -32,9 +17,22 @@
         height: 200px;
         padding-left: 42%;
     }
+    nav {
+        height: 200px;
+        width: 350px;
+        overflow-x: scroll;
+        margin: 10%;
+    }
+    span {
+        display: none;
+    }
+    header {
+        overflow-y: scroll;
+    }
     main {
         display: inline-flex;
         padding: 5px;
+        overflow-y: scroll;
     }
     #SAudio {
         background-color: lightseagreen;
@@ -52,10 +50,67 @@
         text-align: center;
         margin-right: 8px;
     }
-    #SVFuente{
+    #SVFuente {
         background-color: lightgreen;
         text-align: center;
         height: 410px;
-        width: 425px;       
+        width: 425px;
+    }
+    aside {
+        margin: 10%;
+        display: block;
+        text-align: center;
+        border-style: solid;
+        border-color: black;
+        
+    }
+}
+
+/* Formato para tablet */
+
+@media(min-width: 501px) {}
+
+/* Formato de escritorio */
+
+@media(min-width: 900px) {
+    nav {
+        height: auto;
+        display: flex;
+        margin: 2%;
+    }
+    header>h1 {
+        height: 45px;
+        text-align: center;
+    }
+    header>a>img {
+        height: 200px;
+        padding-left: 42%;
+    }
+    main {
+        display: inline-flex;
+        padding: 5px;
+        overflow-x: scroll;
+    }
+    #SAudio {
+        background-color: lightseagreen;
+        height: 100px;
+        width: 450px;
+        display: block;
+        text-align: center;
+        margin-right: 8px;
+    }
+    #SVideo {
+        background-color: lightsalmon;
+        height: 460px;
+        width: 450px;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 8px;
+    }
+    #SVFuente {
+        background-color: lightgreen;
+        text-align: center;
+        height: 410px;
+        width: 425px;
     }
 }
