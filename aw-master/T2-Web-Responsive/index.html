@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T2 Web Responsive</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./imgs/Escudo.jpg">
 </head>
 
 <body>
-    <header>
-        <h1>Web Responsive</h1>
-        <a href="">
-            <img src="https://freesvg.org/img/Hello-World-In-Several-Languages.png" alt="Hola">
-        </a>
-    </header>
     <nav>
         <a href="https://www.reddit.com/r/hmmm/">
-            <img src="https://i.redd.it/pyw39uhlky161.jpg" alt="Internet as an Art">
+            <img src="https://i.redd.it/pyw39uhlky161.jpg" alt="Internet as an Art" width="100px" height="100px">
             <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit debitis maxime quaerat
                 architecto repudiandae, dolore est cupiditate beatae perferendis doloribus, magni mollitia quidem
                 numquam dicta odit. Consectetur, facilis dolores.</span>
         </a>
         <a href="https://es.wikipedia.org/wiki/Hola_mundo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Hola_mundo.bash.zenity.png" alt="Hola Mundo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Hola_mundo.bash.zenity.png" alt="Hola Mundo"
+                width="100px" height="100px">
             <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor maiores aspernatur nobis nostrum
                 autem soluta incidunt esse. Aliquam sit in, deserunt itaque quasi alias perferendis neque aut similique
@@ -31,7 +27,7 @@
             </span>
         </a>
         <a href="https://www.w3schools.com/html/html_images_imagemap.asp">
-            <img src="https://www.w3schools.com/html/workplace.jpg" alt="Pc">
+            <img src="https://www.w3schools.com/html/workplace.jpg" alt="Pc" width="100px" height="100px">
             <span>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, eius fugiat quae repudiandae quo
                 sapiente cupiditate excepturi nobis amet ullam cum sunt nostrum reprehenderit optio exercitationem
@@ -39,56 +35,65 @@
             </span>
         </a>
         <a href="https://store.steampowered.com/">
-            <img src="https://steamstore-a.akamaihd.net/public/shared/images/header/logo_steam.svg?t=962016"
-                alt="Steam">
+            <img src="https://steamstore-a.akamaihd.net/public/shared/images/header/logo_steam.svg?t=962016" alt="Steam"
+                width="100px" height="100px">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quibusdam velit soluta quam qui,
                 aliquam numquam ratione. Vero cumque, velit explicabo molestias dolor, corporis beatae tempore excepturi
                 quidem eius quae?</span>
         </a>
         <a href="https://blog.desdelinux.net/webminal-terminal-de-linux-online/">
             <img src="https://blog.desdelinux.net/wp-content/uploads/2017/08/terminal-de-linux-online.png.webp"
-                alt="Webminal">
+                alt="Webminal" width="100px" height="100px">
             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sunt eveniet, hic unde,
                 repudiandae deleniti itaque iusto possimus a sequi totam sint. Illum laborum mollitia, aspernatur
                 voluptates atque vero nihil!</span>
         </a>
     </nav>
-    <aside>
-
-    </aside>
+    <header>
+        <h1>Web Responsive</h1>
+        <a href="">
+            <img src="https://freesvg.org/img/Hello-World-In-Several-Languages.png" alt="Hola">
+        </a>
+    </header>
     <main>
-        <section>
-            <video width="200" controls>
-                <source src="./vids/Vídeo1.mp4">
-                <source src="./vids/VÍdeo2.mp4">
-                <source src="./vids/Vídeo3.mp4">
-                Tú navegador no es compatible con HTML vídeo
-            </video>
-        </section>
-        <section>
+        <section id="SAudio">
             <audio controls>
                 <source src="./auds/Audio1.mp3">
+                Tú navegador no es compatible con HTML audio
+            </audio>
+            <audio controls>
                 <source src="./auds/Audio2.mp3">
                 Tú navegador no es compatible con HTML audio
             </audio>
         </section>
-        <section>
-            <video controls>
-                <iframe src="https://www.youtube.com/embed/N4L8FPd-jLc" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe
-                        style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"
-                        frameborder="0" type="text/html"
-                        src="https://www.dailymotion.com/embed/video/x2iouod?autoplay=1" width="100%" height="100%"
-                        allowfullscreen allow="autoplay"> </iframe> </div>
-                <iframe src="https://player.vimeo.com/video/259586277" width="640" height="360" frameborder="0"
-                    allow="autoplay; fullscreen" allowfullscreen></iframe>
-                <a href="https://vimeo.com/259586277">Buho campestre</a> from <a
-                    href="https://vimeo.com/user82697359">javier brito</a> on <a href="https://vimeo.com">Vimeo</a>.
+        <section id="SVideo">
+            <video height="150px" controls>
+                <source src="./vids/Vídeo1.mp4">
+                Tú navegador no es compatible con HTML vídeo
+            </video>
+            <video height="150px" controls>
+                <source src="./vids/VÍdeo2.mp4">
+                Tú navegador no es compatible con HTML vídeo
+            </video>
+            <video height="150px" controls>
+                <source src="./vids/Vídeo3.mp4">
+                Tú navegador no es compatible con HTML vídeo
             </video>
         </section>
-    </main>
+        <section id="SVFuente">
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/SiSRS-Vmywg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="200" height="200" src="https://player.vimeo.com/video/259586277" frameborder="0"
+                allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe height="200" width="200" frameborder="0"
+                src="https://www.dailymotion.com/embed/video/x7p1khb?autoplay=1" allowfullscreen allow="autoplay">
+            </iframe>
+        </section>
+    </main> 
+    <aside>
+
+    </aside>
 </body>
 
 </html>
