@@ -34,7 +34,9 @@
         padding: 5px;
         overflow-y: auto;
         flex-direction: column;
-        
+
+        /* FALTA MODIFICAR Y ACOPLAR EL RESTO AL FORMATO DE MÓVIL */
+
     }
     #SAudio {
         background-color: lightseagreen;
@@ -71,7 +73,51 @@
 
 /* Formato para tablet */
 
-@media(min-width: 501px) {}
+@media(min-width: 501px) {
+    
+    /* FALTA MODIFICAR Y ACOPLAR AL FORMATO TABLET */
+
+    nav {
+        height: auto;
+        display: flex;
+        margin: 2%;
+    }
+    header>h1 {
+        height: 45px;
+        text-align: center;
+    }
+    header>a>img {
+        height: 200px;
+        padding-left: 42%;
+    }
+    main {
+        display: inline-flex;
+        padding: 5px;
+        overflow-x: scroll;
+    }
+    #SAudio {
+        background-color: lightseagreen;
+        height: 100px;
+        width: 450px;
+        display: block;
+        text-align: center;
+        margin-right: 8px;
+    }
+    #SVideo {
+        background-color: lightsalmon;
+        height: 460px;
+        width: 450px;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 8px;
+    }
+    #SVFuente {
+        background-color: lightgreen;
+        text-align: center;
+        height: 410px;
+        width: 425px;
+    }
+}
 
 /* Formato de escritorio */
 
