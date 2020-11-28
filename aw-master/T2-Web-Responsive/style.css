@@ -9,6 +9,9 @@
 /* Formato para móvil */
 
 @media(max-width: 500px) {
+    header {
+        overflow-y: scroll;
+    }
     header>h1 {
         height: 45px;
         text-align: center;
@@ -26,13 +29,12 @@
     span {
         display: none;
     }
-    header {
-        overflow-y: scroll;
-    }
     main {
-        display: inline-flex;
+        display: flex;
         padding: 5px;
-        overflow-y: scroll;
+        overflow-y: auto;
+        flex-direction: column;
+        
     }
     #SAudio {
         background-color: lightseagreen;
@@ -62,7 +64,8 @@
         text-align: center;
         border-style: solid;
         border-color: black;
-        
+        height: 50px;
+        width: auto;
     }
 }
 
